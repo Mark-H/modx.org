@@ -65,7 +65,7 @@ class Base
             $response = $this->response;
         }
 
-        $this->view->render($response, $template, $this->getVariables());
+        return $this->view->render($response, $template, $this->getVariables());
     }
 
     public function setVariable($key, $value)
